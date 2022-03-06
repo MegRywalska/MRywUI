@@ -1,14 +1,12 @@
 <div class="text-center form-singin singIUsize ">
-  <form>
-
     <h1 class="h3 mb-3 fw-normal text-dark text-center">Sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" [(ngModel)]="authenticationDTO.username" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" [(ngModel)]="authenticationDTO.password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
@@ -17,8 +15,7 @@
         <input type="checkbox" value="remember-me "> Remember me
       </label>
     </div>
-    <button class="btn btn-outline-secondary mb-3" type="submit">Sign in</button>
+    <button class="btn btn-outline-secondary mb-3" (click)="login()">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
 </div>
 
