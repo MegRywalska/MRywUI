@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { AddPostComponent } from './add-post/add-post.component';
+import { SingUpComponent } from './sing-up/sing-up.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { UserListComponent } from './user-list/user-list.component';
     HomeComponent,
     PostComponent,
     PostListComponent,
-    UserListComponent
+    UserListComponent,
+    AddPostComponent,
+    SingUpComponent
 
   ],
   imports: [
