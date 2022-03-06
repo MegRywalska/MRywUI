@@ -33,10 +33,8 @@ export class NewUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addPost(): void{
-    // http://localhost:9000/post PUT -> dodaj posta
-
-    this.http.put('http://localhost:9000/post', this.userMrywDTO).subscribe((data) => {
+  registerUser(): void{
+    this.http.put('http://localhost:9000/user/', this.userMrywDTO).subscribe((data) => {
       this.clearForm();
 
       this.notification = 'Account has been registered!';

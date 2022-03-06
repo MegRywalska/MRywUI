@@ -35,7 +35,7 @@
     placeholder="Account URL ... "
     [(ngModel)]="userMrywDTO.accountURL"/>
 
-  <button class="btn btn-outline-secondary mb-3 " (click)="addPost()">Sing up</button>
+  <button class="btn btn-outline-secondary mb-3 " (click)="registerUser()">Sing up</button>
   <div *ngIf="notification!=null" class="alert alert-dark " role="alert">
     {{notification}}
   </div>
